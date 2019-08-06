@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="images/logomin.png">
+
+	<title>Become The Game</title>
+</head>
+
+<body>
+	<header>
+		<img id="logo" src="images/logomin.png" alt="Logo du jeu" />
+	 	<p>Le roi est décédé pendant la nuit. Deux princes sont en lice pour le trône et tour à tour, ils vont s'engager dans un duel pour devenir le nouveau Roi.</p>
+		<p>Incarnez le prince de votre choix et prenez les armes !</p>
+		<p>Le Roi est mort, Vive le Roi !</p>
+		<a href="help.html" target="_blank">
+			<input id="help" type="button" value="&#63;" />
+		</a>
+
+
+		<div id="taillePlateau">
+			<input type="button" class="petit" value="Petit" />
+			<input type="button" class="moyen" value="Moyen" />
+			<input type="button" class="grand" value="Grand" />
+			<span id="tour"></span>
+		</div>
+
+	</header>
+	<div id ="container">
+
+		<aside id="joueur1">
+			<p id="nomJ1">Joueur 1</p>
+			<p>Points de vie : <span class="hp"></span></p>
+			<p>Arme équipée : <span class="arme"></span></p>
+			<p>Points de mouvement : <span class="pointsMouv"></span></p>
+			<img class="imgArme" src=""/>
+			<div id="abandonJ1">
+				<input type="button" class="abandon" value="Abandon !" />
+			</div>
+		</aside>
+
+		<div id="zoneJeu">
+			<canvas id="plateau" width="1000" height="500">Votre navigateur n'est pas à jour pour afficher le jeu. Veuillez le mettre à jour, ou utiliser un autre navigateur qu'un Internet Explorer</canvas>
+		</div>
+
+		<aside id="joueur2">
+			<p id="nomJ2">Joueur 2</p>
+			<p>Points de vie : <span class="hp"></span></p>
+			<p>Arme équipée : <span class="arme"></span></p>
+			<p>Points de mouvement : <span class="pointsMouv"></span></p>
+			<img class="imgArme" src=""/>
+			<div id="abandonJ2">
+				<input type="button" class="abandon" value="Abandon !" />
+			</div>
+		</aside>
+	</div>
+
+		<footer>
+		</footer> 
+
+	<script src ="jquery.js"></script>
+	<script src="util.js"></script>
+	<script src="armes.js"></script>
+	<script src="joueur.js"></script>
+	<script src="plateau.js"></script>
+	<script src="king.js"></script>
+</body>
+</html>

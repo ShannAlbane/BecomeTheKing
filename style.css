@@ -1,0 +1,85 @@
+header{
+	margin: auto;
+	text-align: center;
+	font-style: italic;
+}
+
+footer {
+	display : inline-block;
+}
+body {
+	font-family: Arial, Helvetica, Sans-Serif;
+	background: url("images/parchemin.jpg") no-repeat;
+	background-size: 100%, 100%;
+}
+
+#container {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+#taillePlateau > input {
+	border: none;
+	padding: 15px;
+	text-align: center;
+	font-size: 14px;
+	background: #996633;
+	margin : 4px, 2px;
+	cursor: pointer;
+}
+
+#joueur1, #joueur2 {
+	flex: 15%;
+}
+
+#nomJ1, #nomJ2 {
+	font-weight: bold;
+}
+
+#nomJ1, .joueur1 {
+	color: #2e4068;
+}
+
+#nomJ2, .joueur2 {
+	color: #9f7514;
+}
+
+#zoneJeu {
+	flex: 70%;
+	justify-content: center;
+}
+
+#plateau {
+	display: block;
+	margin: auto;
+}
+
+.abandon {
+	display: flex;
+	margin-top: 200px;
+	background : #e60000;
+	font-weight: bold;
+	color: white;
+}
+
+	/*Style de la second .html*/
+	#help {
+	padding : 5px 15px;
+	border-radius : 50%;
+	border: 3px solid #999;
+	margin : 10px;
+	cursor: pointer;
+	}
+
+	code {
+		display: inline-block;
+		background : #DDD;
+		color: #555;
+		line-height : 1.5em;
+		border: 1px solid #DDD;
+		border-radius: 0.4em;
+		padding : 0 0.4em;
+		margin: -1px 0;
+	}
+	
